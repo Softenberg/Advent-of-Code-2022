@@ -1,4 +1,4 @@
-f = open("day 2/day2.txt", "r")
+f = open("day 2/example_data.txt", "r")
 score = 0
 ABC=["A", "B", "C"]
 XYZ=["X", "Y", "Z"]
@@ -10,17 +10,18 @@ for line in f:
     
     if outcome == "Y":
         me = opp
-    elif outcome == "Z":
+    elif outcome == "X":
         me = opp + 1
         if me == 3:
             me =0
-
     else:
         me = opp - 1
         if me == -1:
             me =2
     
-        
+    
+    
+       
     if me == opp + 1 or (me ==0 and opp ==2):
         score += 6
     elif me == opp:
