@@ -28,8 +28,7 @@ for i in listslist:
 
 for line in lines:
     if line[0] == "m":
-        #print(line)
-        
+        #print(line)    
         amount=int(line[5:7])
         fro = int(line[12:14])-1
         to = int(line [17:19])-1
@@ -44,6 +43,5 @@ for line in lines:
 final_string=""    
 for i in listslist:
     final_string+=i.pop(-1)
-    
+
 print(final_string)
-    
